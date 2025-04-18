@@ -37,6 +37,10 @@ const riddle = {
 };
 // TODO: The guardian of an ancient library speaks in riddles. Use object destructuring to rename `ancientWord` to `translation` in the `riddle` object. Print the translation of the riddle.
 
+const { ancientWord: translation, modernWord } = riddle;
+console.log(`Translation of the riddle: ${translation}`);
+
+
 /* Task 5: The Array of Elements */
 const elements = ["Fire", "Water", "Earth", "Air"];
 // TODO: Inside the library, Destructo discovers an array that represents the elements needed to decipher the next clue. Use array destructuring to extract the first two elements. Print the essential elements.
