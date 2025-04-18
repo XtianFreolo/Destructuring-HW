@@ -45,13 +45,27 @@ console.log(`Translation of the riddle: ${translation}`);
 const elements = ["Fire", "Water", "Earth", "Air"];
 // TODO: Inside the library, Destructo discovers an array that represents the elements needed to decipher the next clue. Use array destructuring to extract the first two elements. Print the essential elements.
 
+const [ firstElement, secondElement, ...restElements] = elements;
+const essentialElements = `${firstElement}, ${secondElement}`;
+console.log(`Essential Elements: ${essentialElements}`);
+
 /* Task 6: Skipping Stones */
 const stones = [1, 2, 3, 4, 5, 6];
 // TODO: Crossing the River of Reflections requires skipping certain stones. Use array destructuring to extract only the first and the sixth stones. Print the extracted stones.
+const [ firstStone, , , , , sixthStone] = stones;
+const extractedStones = `${firstStone}, ${sixthStone}`;
+console.log(`Extracted Stones: ${extractedStones}`);
 
 /* Task 7: The Array of Shadows */
 const shadows = ["Darkness", "Silence", "Whisper", "Echo"];
 // TODO: The Cave of Shadows hides more than it reveals. Use array destructuring with the rest parameter to separate the visible shadow (which is the first) from the hidden ones. Print the visible shadow and the hidden shadows.
+
+const [ visibleShadow, ...hiddenShadows] = shadows;
+console.log(`Visible Shadow: ${visibleShadow}`);
+console.log(`Hidden Shadows: ${hiddenShadows.join(",")}`);
+
+
+
 
 /* Task 8: The Wise Function */
 // TODO: Destructo needs to decode ancient directions to continue his quest. Help him by writing a function `revealPath` that decodes and prints the direction and distance to travel. The function takes an object with `direction` and `distance` as parameters.
