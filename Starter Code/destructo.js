@@ -106,3 +106,7 @@ console.log(`The Final Key: ${secret}`);
 let stoneA = "Emerald";
 let stoneB = "Ruby";
 // TODO: In the treasure chamber, two mystical stones control the treasure's safeguard. Use array destructuring to swap the values of `stoneA` and `stoneB`. Print the result of the swap.
+
+[stoneA, stoneB] = [stoneB, stoneA];
+console.log(`Swapped Stones: ${stoneA}, ${stoneB}`);
+
